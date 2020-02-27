@@ -1,4 +1,4 @@
-
+// Q5. Find common elements between two arrays.
 package exercise1;
 
 import java.sql.SQLOutput;
