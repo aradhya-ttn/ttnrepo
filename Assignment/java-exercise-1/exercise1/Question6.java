@@ -1,3 +1,5 @@
+// Q6. There is an array with every element repeated twice except one. Find that element
+
 package exercise1;
 
 import java.util.Scanner;
