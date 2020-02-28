@@ -1,3 +1,5 @@
+// Q1. Write a program to replace a substring inside a string with other string ?
+
 package exercise1;
 import java.lang.*;
 import java.util.Scanner;
