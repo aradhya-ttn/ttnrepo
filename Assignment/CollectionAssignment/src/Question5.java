@@ -1,8 +1,9 @@
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
 
-class Employee implements Comparable<Employee>{
+class Employee {
     String EmpName;
     double age;
     double salary;
@@ -12,10 +13,7 @@ class Employee implements Comparable<Employee>{
         this.salary=salary;
     }
 
-    @Override
-    public int compareTo(Employee emp) {
-        return (int) (this.salary - emp.salary);
-    }
+
     public String toString(){
         return"Empoloyee :"+EmpName+"-"+ age+"-"+salary;
     }
@@ -33,8 +31,14 @@ public class Question5 {
         employee.add(employee4);
 
         System.out.println(employee);
+        Comparator<Employee> comparator= new Comparator<Employee>() {
+            @Override
+            public int compare(Employee employee, Employee t1) {
+                return (int) (employee.salary - t1.salary);
+            }
+        };
 
-        Collections.sort(employee);
+        Collections.sort(employee, comparator);
         System.out.println();
         System.out.println(employee);
     }
