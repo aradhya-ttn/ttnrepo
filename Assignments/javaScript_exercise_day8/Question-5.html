@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Question-5</title>
+    <script>
+        employee=[
+            {name:'Aradhya',age:22,salary:900,Dob:'12-sept-1996'},
+            {name:'Ankit',age:22,salary:1200,Dob:'2-oct-1999'},
+            {name:'parul;',age:21,salary:1300,Dob:'21-may-1998'},
+            {name:'vinay',age:19,salary:10400,Dob:'12- jan-1992'},
+            {name:'Aman',age:18,salary:11200,Dob:'10-sept-1996'},
+            {name:'Priyanka',age:21,salary:10600,Dob:'12-june-1995'},
+        ]
+        // Question-1
+        console.log(JSON.parse(JSON.stringify(employee)));
+        // Question-2
+        var filteredData = employee.filter((emp)=>{
+           if(emp.salary>5000){
+               return true;
+           }
+        });
+        console.log(filteredData);
+        //question-3
+        groups = {20:[],30:[]}
+        employee.forEach(emp=>{
+            if(emp.age>0 && emp.age<20) {
+                groups["20"].push(emp);
+            }else{
+                groups["30"].push(emp);
+            }
+        });
+
+        console.log(JSON.parse(JSON.stringify(groups)));
+        //Question-4
+        employee.forEach(emp => {
+            if(emp.salary<1000 && emp.age>20){
+                emp.salary *= 5;
+            }
+        });
+
+        console.log(employee);
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

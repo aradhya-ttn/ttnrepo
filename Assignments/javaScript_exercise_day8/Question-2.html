@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Question-2</title>
+<script >
+    check();
+    "use strict";
+   function check() {
+       var str = prompt('enter the String');
+       var len = str.length;
+       var i = 0;
+
+
+       function pallinFunction(st) {
+           while (i < Math.floor(len / 2)) {
+               if (st[i] != st[len - 1 - i]) {
+                   return "not pallindrome";
+               }
+               return "pallindrome";
+           }
+       }
+       var result = pallinFunction(str);
+       alert('given string is ' + result);
+   }
+</script>
+</head>
+<body>
+
+</body>
+</html>

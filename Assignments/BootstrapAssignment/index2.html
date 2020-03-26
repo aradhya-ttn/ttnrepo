@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/index2.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg d-flex justify-content-between ">
+            <a href="" class="navbar-brand">To The New</a>
+            <div class="navbar">
+                <a href="" class="nav-item nav-link">Home</a>
+                <a href="" class="nav-item nav-link">Quick Help</a>
+            </div>
+        </nav>
+        <hr>
+    </header>
+
+
+    <div class="row">
+        <div class="col-sm-4 offset-sm-4 border">
+            <div class="bg-secondary row rounded-top p-2 text-light">
+                <h3>Bug Report</h3>
+            </div>
+            <form action="" class="">
+                <label class="label text-dark col-sm-12 row">Title *</label>
+                <input class="col-sm-12 rounded" type="text" required>
+                <label class="label text-dark  col-sm-12 row">Description *</label>
+                <textarea class="col-sm-12 rounded" name ="" rows="5" required></textarea>
+                <label class="label text-dark  col-sm-12 row" >Operating System:</label>
+                <select class="col-sm-12 rounded my-bg">
+                    <option value="win">Windows XP</option>
+                    <option value="win">Windows 98</option>
+                    <option value="win">Windows 7</option>
+                    <option value="win">Ubuntu</option>
+                </select>
+                <label class="label text-dark  col-sm-12 row">Product *</label>
+                <select class="col-sm-12 rounded my-bg">
+                    <option value="Formoid">Formoid 1</option>
+                    <option value="Formoid">Formoid 2</option>
+                    <option value="Formoid">Formoid 3</option>
+                    <option value="Formoid">Formoid 4</option>
+                </select>
+
+
+
+                <label class="label text-dark  col-sm-12 row">Version*</label>
+                <input id="version" class="rounded" type="text" required>
+
+                <label class="label text-dark  col-sm-12 row">License:</label>
+                <div class="row">
+                    <div class="col-sm-4">
+                        <input  type="radio" name="License">
+                        <label class="label text-dark ">Free</label>
+                    </div>
+                    <div class="col-sm-4">
+                        <input  type="radio" name="License">
+                        <label class="label text-dark  ">Business</label>
+                    </div>
+                </div>
+
+
+                <label class="label text-dark  col-sm-12 row">Severity:</label>
+                <select class="col-sm-12 rounded my-bg">
+                    <option value="Critical">Critical 1</option>
+                    <option value="Critical">Critical 2</option>
+                    <option value="Critical">Critical 3</option>
+                    <option value="Critical">Critical 4</option>
+                </select>
+
+                <label class="label text-dark  col-sm-12 row p-3">Attachments:</label>
+                <input class="col-sm-12 row mb-2" type="file">
+            </form>
+            <div class="input-button row bg-secondary rounded-bottom d-flex justify-content-end">
+                <button type="button" id="button">Save</button>
+            </div>
+        </div>
+
+
+    </div>
+
+
+</body>
+</html>
