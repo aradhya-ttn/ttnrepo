@@ -1,6 +1,0 @@
-rootProject.name = 'GradleAssignment'
-include 'Question1'
-include 'Question2'
-include 'Question3'
-include 'Question4'
-
